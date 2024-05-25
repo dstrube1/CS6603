@@ -1,0 +1,86 @@
+FB Advertisers [10] Academic / Science
+FB Advertisers [56] Entertainment / Travel
+FB Advertisers [96] Financial / Retail
+FB Advertisers [31] Fitness / Health
+FB Advertisers [30] Food / Beverage
+FB Advertisers [33] Miscellaneous
+FB Advertisers [30] Online Services
+FB Advertisers [33] Political / Religious
+// FB Advertisers [593] Unknown
+
+Academic / Science [4] Yes
+Academic / Science [6] No
+
+Entertainment / Travel [25] Yes
+Entertainment / Travel [24] No
+Entertainment / Travel [7] Way Off
+
+Financial / Retail [38] Yes
+Financial / Retail [55] No
+Financial / Retail [3] Way Off
+
+Fitness / Health [6] Yes
+Fitness / Health [10] No
+Fitness / Health [15] Way Off
+
+Food / Beverage [18] Yes
+Food / Beverage [10] No
+Food / Beverage [2] Way Off
+
+Miscellaneous [10] Yes
+Miscellaneous [22] No
+Miscellaneous [1] Way Off
+
+Online Services [19] Yes
+Online Services [11] No
+
+Political / Religious [10] Yes
+Political / Religious [21] No
+Political / Religious [2] Way Off
+
+// Unknown [593] Way Off
+
+
+Academic / Science
+Count: 10
+Accuracy: 40
+Rubbish: 0
+
+Entertainment / Travel
+Count: 56
+Accuracy: 45
+Rubbish: 13
+
+Financial / Retail
+Count: 96
+Accuracy: 40
+Rubbish: 3
+
+Fitness / Health
+Count: 31
+Accuracy: 19
+Rubbish: 48
+
+Food / Beverage
+Count: 30
+Accuracy: 60
+Rubbish: 7
+
+Miscellaneous
+Count: 33
+Accuracy: 30
+Rubbish: 3
+
+Online Services
+Count: 30
+Accuracy: 63
+Rubbish: 0
+
+Political / Religious
+Count: 33
+Accuracy: 30
+Rubbish: 6
+
+Most accurate: Online Services
+Least accurate: Fitness / Health
+

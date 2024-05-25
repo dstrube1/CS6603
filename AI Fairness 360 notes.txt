@@ -1,0 +1,56 @@
+German credit scoring
+https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29
+Predict an individual's credit risk.
+Protected Attributes:
+- Sex, privileged: Male, unprivileged: Female
+- Age, privileged: Old, unprivileged: Young
+
+
+
+Reweighing:
+Weights the examples in each (group, label) combination differently to ensure fairness before classification.
+Sex:
+Accuracy after mitigation changed from 75% to 78%
+Age:
+Accuracy after mitigation changed from 75% to 74%
+
+Optimized Pre-Processing:
+Learns a probabilistic transformation that can modify the features and the labels in the training data.
+Sex:
+Accuracy after mitigation changed from 75% to 60%
+Age:
+Accuracy after mitigation changed from 75% to 61%
+
+Adversarial Debasing:
+Learns a classifier that maximizes prediction accuracy and simultaneously reduces an adversary's ability to determine the protected attribute from the predictions. This approach leads to a fair classifier as the predictions cannot carry any group discrimination information that the adversary can exploit.
+Sex:
+Accuracy after mitigation changed from 75% to 70%
+Age:
+Accuracy after mitigation changed from 75% to 69%
+
+Reject Option Based Classification:
+Changes predictions from a classifier to make them fairer. Provides favorable outcomes to unprivileged groups and unfavorable outcomes to privileged groups in a confidence band around the decision boundary with the highest uncertainty.
+Sex:
+Accuracy after mitigation changed from 75% to 77%
+Age:
+Accuracy after mitigation unchanged
+
+For my dataset, I chose German credit scoring, and for Protected Attributes, I chose Sex and Age.
+
+At step 3, there is a link: "Learn more about how to choose.", which goes here: https://aif360.mybluemix.net/resources#guidance. Clicking on that link, this part stood out to me: "AIF360 recommends the earliest mediation category in the pipeline that the user has permission to apply because it gives the most flexibility and opportunity to correct bias as much as possible."
+With that in mind, I first chose the two pre-processing algorithms: Reweighing and Optimized Pre-Processing. However, their results interestingly did not seem very significant to me:
+
+Reweighing:
+Sex:
+Accuracy after mitigation changed from 75% to 78%
+Age:
+Accuracy after mitigation changed from 75% to 74%
+
+Optimized Pre-Processing:
+Sex:
+Accuracy after mitigation changed from 75% to 60%
+Age:
+Accuracy after mitigation changed from 75% to 61%
+
+In fact, accuracy went down for both Sex and Age for Optimized Pre-Processing. Between these two algorithms, Reweighing seems better because accuracy either went up (for Sex), or did not go down very much (for Age).
+Looking at the output from the other algorithms, it was further interesting to find that accuracy went down for both Sex and Age for Adversarial Debasing, but not for Reject Option Based Classification. For Reject Option Based Classification, accuracy went up for Sex and remained unchanged for Age. For those reasons, Reject Option Based Classification seems to be the best algorithm. Surprisingly enough Optimized Pre-Processing had the biggest drops in accuracy, so it would seem to be the worst algorithm in this case.

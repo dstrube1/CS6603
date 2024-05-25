@@ -1,0 +1,44 @@
+Investigate Fairness on Recidivism Classification
+Age
+Sex
+
+Single Threshold
+Max false + %: 21.5
+Min false +: 4.7
+
+Max false -: 22.4
+Min false -: 12.9
+
+Max Accuracy: 82.4
+Min Accuracy: 64.6
+
+Demographic parity
+Max false +: 37.6
+Min false +: 17.9
+
+Max false -: 16.3
+Min false -: 4.7
+
+Max Accuracy: 67.9
+Min Accuracy: 57.6
+
+Equal opportunity
+Max false +: 22.2
+Min false +: 16.5
+
+Max false -: 16.3
+Min false -: 5.9
+
+Max Accuracy: 77.6
+Min Accuracy: 64.8
+
+Equal accuracy
+Max false +: 25.9
+Min false +: 3.2
+
+Max false -: 32.1
+Min false -: 4.7
+
+Max Accuracy: 69.4
+Min Accuracy: 64.7
+

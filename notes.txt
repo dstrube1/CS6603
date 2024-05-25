@@ -1,0 +1,118 @@
+Homepage should be 6603 not 8803:
+https://omscs.gatech.edu/cs-8803-o10-special-topics-ai-ethics-and-society-course-videos
+
+Lesson 5, video 1, skips at about 0:20:
+https://cdnapisec.kaltura.com/html5/html5lib/v2.89/mwEmbedFrame.php/p/2019031/uiconf_id/40436601?wid=1_fulggzxr&iframeembed=true&playerId=kaltura_player_&flashvars[playlistAPI.kpl0Id]=1_ahl0cter&flashvars[ks]=&&flashvars[imageDefaultDuration]=30&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[forceMobileHTML5]=true&flashvars[nextPrevBtn.plugin]=true&flashvars[hotspots.plugin]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[playlistAPI.playlistUrl]=https://canvasgatechtest.kaf.kaltura.com/playlist/details/{playlistAPI.kpl0Id}/categoryid/148201841
+
+a & c: accounts of denied loan 
+n1 & n2: number of people in each group
+p1: proportion of loans denied for protected group
+p2: proportion of loans denied for unprotected group
+
+book:
+p25
+model: an abstract representation of some process
+input, output, how to evaluate success, constraints, blind spots, 
+
+p29
+LSI–R: Level of Service Inventory–Revised
+
+three kinds of models: baseball models, hypothetical family meal model, and recidivism model
+3 key questions:
+is the model opaque, or even invisible?
+Does it damage or destroy lives?
+can it scale?
+
+Ch 4: p62
+
+variance:
+average of squares of deviations of the observations from their mean;
+ex: 2,4,6,8,10
+sum = 30
+n (number of elements) = 5
+30/5 = 6 = average
+variance = ((x1 - avg)^2 + ... (xn -avg)^2) / (n-1)
+	= ((2-6)^2 + (4-6)^2 + (6-6)^2 + (8-6)^2 + (10-6)^2 ) / (5 - 1)
+	= ((-4)^2 + (-2)^2 + (0)^2 + (2)^2 + (4)^2 ) / 4
+	= (16 + 4 + 0 + 4 + 16) / 4
+	= 40 / 4 = 10
+population standard deviation is equal to the square root of the variance
+	
+correlation:
+0 - 0.39 = very weak - weak positive linear relationship
+0.4 - 0.6 = moderate
+0.7 - 1.0 = strong - very strong
+
+IO b/n 90-110: average; 
+> 120: superior; 
+~68% pop: 85-115; 
+avg: 70-130: 95% of pop;
+
+20% is not within 30% +/-4%:
+30% + 4% = 34%
+30% - 4% = 26%
+20% is outside the range of 26-34%
+30% is outside the margin of error?
+
+import random
+random.random()
+#^ This will generate a random float between 0 and 1
+random.randint(1,10)
+
+import statistics
+#Create a sample list:
+a = [0, 1, 1, 3, 4, 9, 15]
+statistics.mean(a)
+statistics.median(a)
+statistics.mode(a)
+statistics.stdev(a)
+statistics.variance(a)
+
+import math
+math.factorial(5)
+math.pi
+math.sqrt(5)
+math.log(256, 2)
+
+import datetime
+datetime.datetime.now()
+datetime.datetime.now().strftime("%F")
+
+import csv
+with open('fruits.csv') as csvfile:
+    my_csv_file = csv.reader(csvfile, delimiter=';')
+    for row in my_csv_file:
+        print(row)
+        
+protected class variables:
+Module 1, p33
+
+Bias is a learner’s tendency to consistently learn the same wrong thing. 
+Variance is the tendency to learn random things irrespective of the real signal
+==================================
+errors:
+Module 3:
+Word Similarity & Relatedness
+last slide should have 1s in jersey and highlights for all rows
+
+WEAT: Word embedding association test
+FACS: Facial action coding system
+
+Issues with Facial Recognition Algorithms
+3:12: Analze
+
+What are Predictive Algorithms?
+9:20: Raul should be Dev II
+
+Decision Tree
+2:10 "will chest on their taxes" - shouldn't the No indicate that they won't cheat?
+==================================
+
+neural networks have high accuracy but long training times and difficult interpretation
+KNN: Takes a long time to train, and is easy to overfit
+
+if the model is doing something bad (like sending people to jail), then more false + is better than more false -
+if the model is doing something good (like giving people loans), then more false - is better than more false +
+
+Accuracy, error rate, precision, etc:
+Module 3, pg 108

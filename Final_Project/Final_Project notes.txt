@@ -1,0 +1,1 @@
+Did any of these approaches seem to work to mitigate bias (or increase fairness)? ### Explain your reasoning. Did any group receive a positive advantage? ### Was any group disadvantaged by these approaches? ### What issues would arise if I used these methods to mitigate bias? ###

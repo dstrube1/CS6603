@@ -1,0 +1,41 @@
+https://gatech.instructure.com/courses/263372/assignments/1110490
+
+In your own words, define false negative, false positive, and accuracy rates.
+False negative: Incorrectly concluding that the thing you're looking for is not there. 
+False positive: Incorrectly concluding that the thing you're looking for is there.
+Accuracy rate is the rate of accuracy. That is, the number of correct predictions divided by the number of total predictions.
+
+In your own words, define bias. 
+
+
+Explain how bias can be applied to this dataset. 
+
+
+Define fairness. 
+
+
+Explain how fairness can be applied to this dataset. 
+
+
+What is the difference between these two terms?
+
+
+In the case of this dataset, which of the three rates (false negative, false positive, and accuracy) should be most highly considered when wanting to mitigate bias? Why?
+
+
+Of the three rates (false negative, false positive, and accuracy), which rate should be most highly considered to ensure fairness? Why?
+
+
+Are the rates you selected for bias and fairness the same? Why or why not?
+
+
+In the What-If threshold window, change the threshold values to help mitigate bias based on the metric you chose in step 3.3 above. What happens to the rates for the other two terms? Do the corresponding results impact any groups negatively? (include a snapshot of the thresholds selected)
+
+
+In the What-If threshold window, change the threshold values to ensure fairness based on the metric you chose in step 3.4 above. What happens to them for the other two terms? Do the corresponding results impact any groups negatively? (include a snapshot of the thresholds selected) [Note: If you selected the same rates for bias and fairness, there is no need to rerun the analysis, just mention that here]
+
+
+Based on your assessment and definitions, is it a difficult task to mitigate bias and ensure fairness simultaneously? Why or why not?
+
+
+Would your assessment and definitions apply if a different dataset was selected? Why or why not?
